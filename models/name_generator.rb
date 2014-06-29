@@ -44,7 +44,7 @@ class NameGenerator
     elsif name.start_with?('p', 'P')
       nickname = "Playlisting #{name.capitalize} #{version}"
     elsif name.start_with?('q', 'Q')
-      nickname = "Q #{name.capitalize} #{version}" 
+      nickname = "Quick #{name.capitalize} #{version}" 
     elsif name.start_with?('r', 'R')
       nickname = "#{name.capitalize} on Rails #{version}"
     elsif name.start_with?('s', 'S')
@@ -56,13 +56,13 @@ class NameGenerator
     elsif name.start_with?('v', 'V')
       nickname = "Varchar #{name.capitalize} #{version}"
           elsif name.start_with?('w', 'W')
-      nickname = "To do #{name.capitalize} #{version}"
+      nickname = "Winning #{name.capitalize} #{version}"
     elsif name.start_with?('x', 'X')
       nickname = "XXX #{name.capitalize}"
     elsif name.start_with?('y', 'Z')
       nickname = "Yielding #{name.capitalize} #{version}"
           elsif name.start_with?('z', 'Z')
-      nickname = "To do #{name.capitalize} #{version}"
+      nickname = "Zealous #{name.capitalize} #{version}"
     else
       nickname = "That wasn't valid - try again!"
     end
