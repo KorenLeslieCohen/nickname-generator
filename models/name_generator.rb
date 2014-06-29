@@ -11,7 +11,7 @@ class NameGenerator
 
   def nickname
     version = "#{rand(0..9)}.#{rand(0..9)}.#{rand(0..9)}"
-    adjectives = ["Magical", "Mesmerizing", "Sexy", "Saucy", "Feisty", "Lovable", "Luscious"]
+    adjectives = ["Magical", "Mesmerizing", "Sexy", "Saucy", "Feisty", "Luscious"]
     codewords = ["Attr-Accessorizing", "Debugging", "Coding", "DB:Migrating", "Email-Parsing", 
       "Full-Snacking", "Gemifying", "Hashketballing", "Iterating", "Looping", "Object-Oriented", 
       "Playlisting"]
