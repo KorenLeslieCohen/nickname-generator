@@ -1,0 +1,16 @@
+h1 {
+  color: black;
+  font-family: 'Give You Glory';
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+a:hover {
+  color: red;
+}
+
+
+
