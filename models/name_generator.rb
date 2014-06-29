@@ -10,60 +10,61 @@ class NameGenerator
   end
 
   def nickname
+    version = "#{rand(0..6)}.#{rand(0..6)}.#{rand(0..6)}"
     if name.start_with?('a','A') 
-      nickname = "Attr-accessorizing #{name.capitalize}"
+      nickname = "Attr-Accessorizing #{name.capitalize} #{version}"
     elsif name.start_with?('b', 'B')
-      nickname = "Debugging #{name.downcase}" 
+      nickname = "Debugging #{name.capitalize} #{version}" 
     elsif name.start_with?('c', 'C')
-      nickname = "Coding #{name.capitalize}"
+      nickname = "Coding #{name.capitalize} #{version}"
     elsif name.start_with?('d', 'D')
-      nickname = "DB:migrating #{name.capitalize}"
+      nickname = "DB:Migrating #{name.capitalize} #{version}"
     elsif name.start_with?('e', 'E')
-      nickname = "Email-parsing #{name.capitalize}"
+      nickname = "Email-Parsing #{name.capitalize} #{version}"
     elsif name.start_with?('f', 'F')
-      nickname = "Full-snack #{name.capitalize}"
+      nickname = "Full-Snack #{name.capitalize} #{version}"
     elsif name.start_with?('g', 'G')
-      nickname = "#{name.capitalize} the Green Grocer"
+      nickname = "Gemified #{name.capitalize} #{version}"
     elsif name.start_with?('h', 'H')
-      nickname = "Hashketball #{name.capitalize}"
+      nickname = "Hashketballing #{name.capitalize} #{version}"
     elsif name.start_with?('i', 'I')
-      nickname = "Iterating #{name.capitalize}"
+      nickname = "Iterating #{name.capitalize} #{version}"
     elsif name.start_with?('j', 'J')
-      nickname = "Joining-tables #{name.capitalize}"
+      nickname = "Joining-Tables #{name.capitalize} #{version}"
     elsif name.start_with?('k', 'K')
-      nickname = "Keywording #{name.capitalize}" 
+      nickname = "Keywording #{name.capitalize} #{version}" 
     elsif name.start_with?('l', 'L')
-      nickname = "Loopy #{name.capitalize}" 
+      nickname = "Loopy #{name.capitalize} #{version}" 
     elsif name.start_with?('m', 'M')
-      nickname = "Method #{name.capitalize}"
+      nickname = "Method #{name.capitalize} #{version}"
     elsif name.start_with?('n', 'N')
-      nickname = "Nokogiri #{name.capitalize}"
+      nickname = "Nokogiri #{name.capitalize} #{version}"
     elsif name.start_with?('o', 'O')
-      nickname = "Object-oriented #{name.capitalize}"
+      nickname = "Object-Oriented #{name.capitalize} #{version}"
     elsif name.start_with?('p', 'P')
-      nickname = "Playlisting #{name.capitalize}"
+      nickname = "Playlisting #{name.capitalize} #{version}"
     elsif name.start_with?('q', 'Q')
-      nickname = "Q #{name.capitalize}" 
+      nickname = "Q #{name.capitalize} #{version}" 
     elsif name.start_with?('r', 'R')
-      nickname = "#{name.capitalize} on Rails"
+      nickname = "#{name.capitalize} on Rails #{version}"
     elsif name.start_with?('s', 'S')
-      nickname = "Syntactic-sugaring #{name.capitalize}"
+      nickname = "Syntactic-Sugaring #{name.capitalize} #{version}"
     elsif name.start_with?('t', 'T')
-      nickname = "Travis-hating #{name.capitalize}"
+      nickname = "Travis-Hating #{name.capitalize} #{version}"
     elsif name.start_with?('u', 'U')
-      nickname = "Uniq #{name.capitalize}"
+      nickname = "Uniq #{name.capitalize} #{version}"
     elsif name.start_with?('v', 'V')
-      nickname = "Varchar #{name.capitalize}"
+      nickname = "Varchar #{name.capitalize} #{version}"
           elsif name.start_with?('w', 'W')
-      nickname = "To do #{name.capitalize}"
+      nickname = "To do #{name.capitalize} #{version}"
     elsif name.start_with?('x', 'X')
       nickname = "XXX #{name.capitalize}"
     elsif name.start_with?('y', 'Z')
-      nickname = "Yielding #{name.capitalize}"
+      nickname = "Yielding #{name.capitalize} #{version}"
           elsif name.start_with?('z', 'Z')
-      nickname = "To do #{name.capitalize}"
+      nickname = "To do #{name.capitalize} #{version}"
     else
-      nickname = name
+      nickname = "That wasn't valid - try again!"
     end
     nickname
   end

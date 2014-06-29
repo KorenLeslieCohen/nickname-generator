@@ -1,18 +1,19 @@
 <html>
   <head>
     <link href="style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=
-  Advent+Pro">
-  <link rel="stylesheet" type="text/css"href="http://fonts.googleapis.com/css?family=
-  Give+You+Glory">
   </head>
   <body>
     <center>
-    <p class="type">Name:</p>
-    <p class="name"><%= @name %></p>
-    <p class="type">Nickname:</p>
-    <p class="nickname"><%= @generator.nickname %></p>
-    <a href=<%="/"%>>Generate Another Nickname</a>
+    <img src="http://flatironschool.com/img/fis-tumblr-logo.png">
+    <div class="middle">
+      <h3>NICKNAME //</h3>
+      <h1><%= @generator.nickname %></h1>
+      <a href=<%="/"%>>GENERATE // ANOTHER</a>
+    </div>
+    <footer float="bottom">
+      <img src="https://www.moolagram.com/img/line.png" height="50">
+      <p>Created by <a href="http://twitter.com/korenlc" target="_blank">@korenlc</a> at <a href="http://twitter.com/flatironschool" target="_blank">@flatironschool</a>
+    </footer>
     </center>
   </body> 
 </html>
